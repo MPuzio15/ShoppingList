@@ -27,11 +27,11 @@ window.onload = () => {
     let quantityValue = input2.value;
     console.log(nameValue, quantityValue);
 
-    if (isImputEmpty(nameValue.value, quantityValue.value)) {
+    if (isImputEmpty(nameValue, quantityValue)) {
       alert("Podaj nazwę i ilość produktu, aby dodać go do koszyka");
       return;
     }
-    //tutaj if
+    
     if (editItemId === 0) {
       createObject(itemsToBuy, nameValue, quantityValue);
     } else {
@@ -40,8 +40,13 @@ window.onload = () => {
     addElementToLocalStorage(itemsToBuy);
     clearTable(tableWithItemsToBuy);
     createTable(tableWithItemsToBuy, itemsToBuy);
-    clearInputs(nameValue, quantityValue);
+    clearInputs(input1, input2);
   });
+
+  function clearInputs(name, quantity) {
+    name.value = "";
+    quantity.value = "";
+  }
 
   function createTable(tbody, items) {
     items.forEach((element, index) => {
@@ -115,10 +120,7 @@ window.onload = () => {
   }
 };
 
-function clearInputs(name, quantity) {
-  name.value = "";
-  quantity.value = 0;
-}
+
 
 function removeFromArray(tab, el) {
   tab.splice(el, 1);
