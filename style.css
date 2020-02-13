@@ -234,3 +234,13 @@ nav ul li a {
 nav ul li a:hover {
   background-color: gray;
 }
+
+footer p {
+  color: azure;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  margin: 50px 0;
+}
