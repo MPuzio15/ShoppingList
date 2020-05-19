@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -44,14 +44,13 @@ body {
 
 .titleWelcome {
   position: absolute;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: rgb(0, 0, 0, 1);
   font-size: 1rem;
   text-align: center;
   font-weight: 400;
   letter-spacing: 3px;
   line-height: 5vh;
-
 }
 
 .welcome::after {
@@ -80,8 +79,8 @@ header {
 }
 
 #logo {
-  height: 95%;
-  width: 70%;
+  height: 70%;
+  width: 50%;
   display: block;
   min-height: 80px;
 }
@@ -107,7 +106,7 @@ i.burger.fa.fa-times.active {
 }
 
 .menu {
-  flex-basis: 100vw;
+  width: 100vw;
   display: flex;
   position: fixed;
   flex-direction: column;
@@ -166,9 +165,10 @@ main {
 
 .products {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: space-around;
+  justify-content: space-around;
   width: 100%;
   height: 100%;
   max-width: 1200px;
@@ -176,22 +176,24 @@ main {
 
 .titleSection {
   width: 100%;
+  height: 10%;
   max-width: 1200px;
-  display: block;
-  margin: 4% 0;
+  margin: 5% 0;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .imagesContainer {
+  height: 90%;
   display: flex;
+  flex-grow: 1;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-
+  justify-content: space-around;
+  align-items: center;
 }
 
 .products div.title {
@@ -203,25 +205,26 @@ main {
   text-align: center;
   z-index: 0;
   font-size: 0.9rem;
-  margin-top: 5%;
+  height: 10%;
+  line-height: 3rem;
 }
 
 .imagesContainer div.img {
-  flex-shrink: 1;
   position: relative;
-  flex-basis: 23%;
-  flex-shrink: 0;
+  flex-basis: 45%;
+  height: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .imagesContainer .img img {
-  width: 90%;
+  width: 100%;
   z-index: -1;
   transition: 0.3s;
   opacity: 0.9;
+  height: 100%;
 }
 
 .products .img:hover {
@@ -241,6 +244,81 @@ main {
   justify-content: space-between;
 }
 
+.titleCont {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #e7d9b7;
+  color: #412717;
+  display: block;
+  width: 100%;
+  line-height: 4rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin: 5% 0;
+}
+
+.photosContainer {
+  width: 100%;
+  max-width: 1200px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mainDiv {
+  flex-basis: 80%;
+  min-height: 65vh;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #e7d9b7;
+  text-align: center;
+  margin: 5% 0;
+}
+
+.productImgDiv {
+  width: 60%;
+  flex-basis: 60%;
+}
+
+.productImgDiv img {
+  width: 90%;
+}
+
+.imgProductsContainer p,
+button {
+  background-color: #e7d9b7;
+  color: #412717;
+  flex-basis: 10%;
+  font-size: 0.9rem;
+  letter-spacing: 4px;
+  padding: 3%;
+  display: block;
+  line-height: 2rem;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.imgProductsContainer button {
+  margin-top: 10%;
+  border: none;
+  transition: 0.3s;
+}
+
+.imgProductsContainer button:hover {
+  border: 2px solid #e7d9b7;
+  background-color: transparent;
+}
+
 .coffeHouses {
   width: 100%;
   max-width: 1200px;
@@ -255,12 +333,13 @@ main {
   max-width: 1200px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
 .imgCoffeShop {
-  width: 48%;
+  flex-basis: 90%;
   display: flex;
   flex-direction: column;
   align-self: stretch;
@@ -281,97 +360,16 @@ main {
   margin: 2% 0;
 }
 
-.titleCont {
-  width: 100%;
-  max-width: 1200px;
-  background-color: #e7d9b7;
-  color: #412717;
-  display: block;
-  width: 100%;
-  line-height: 4rem;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 7px;
-  text-transform: uppercase;
-  margin: 4% 0;
-}
-
-.photosContainer {
-  width: 100%;
-  max-width: 1200px;
-  flex-basis: 100%;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.mainDiv {
-  flex-basis: 26%;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border: 2px solid #e7d9b7;
-  text-align: center;
-  margin-bottom: 5%;
-}
-
-.productImgDiv {
-  width: 40%;
-}
-
-.productImgDiv img {
-  width: 100%;
-}
-
-.imgProductsContainer p {
-  background-color: #e7d9b7;
-  color: #412717;
-  flex-basis: 20%;
-  font-size: 0.8rem;
-  width: 100%;
-  padding: 4%;
-  text-align: center;
-  letter-spacing: 7px;
-  text-transform: uppercase;
-}
-
-.imgProductsContainer button {
-  margin-top: 10%;
-  flex-basis: 20%;
-  width: 100%;
-  font-size: 0.9rem;
-  border: none;
-  color: #412717;
-  background-color: #e7d9b7;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  padding: 3px;
-  display: block;
-  transition: 0.3s;
-  line-height: 3.2rem;
-}
-
-.imgProductsContainer button:hover {
-  border: 2px solid #e7d9b7;
-  background-color: transparent;
-}
-
 .contactContainer {
-  margin-bottom: 15vh;
-  margin-top: 10vh;
-  width: 90vw;
-  min-height: 50vw;
+  margin-bottom: 10vh;
+  margin-top: 3vh;
+  width: 100vw;
+  min-height: 80vw;
   max-width: 800px;
-  background-image: url("./images/coffee_background_1280.jpg");
+  /* background-image: url("./images/coffee_background_1280.jpg"); */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -380,51 +378,60 @@ main {
   position: relative;
 }
 
-.form {
+.wholeForm {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  min-height: 40vh;
   align-items: center;
-  width: 100%;
-  flex-basis: 50%;
-}
-
-.message {
-  font-size: 0.8rem;
-  margin-bottom: 3%;
-  flex-basis: 20%;
-  text-align: center;
+  justify-content: space-around;
 }
 
 .mainInForm {
-  flex-basis: 20%;
+  height: 20%;
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 2%;
 }
 
+.formArticle {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 
-.form>* {
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  flex-basis: 60%;
+}
+
+.message {
+  font-size: 0.8rem;
+  flex-basis: 10%;
+  text-align: center;
+}
+
+.form > * {
   width: 100%;
   padding: 3%;
   font-size: 0.6rem;
   border-width: 1px;
   border-collapse: collapse;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   border-color: #333332;
-  text-transform: uppercase;
   letter-spacing: 2px;
   text-align: left;
-  background-color: #eee;
 }
 
-.form textarea {
-  flex-basis: 40%;
-}
-
-.form input,
-button {
-  flex-basis: 20%;
+.form button {
+  flex-basis: 5%;
+  padding: 0;
+  margin-top: 5%;
 }
 
 footer {
@@ -437,14 +444,11 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 3px 3px gray;
-  background-color: gray;
 }
-
 
 footer p {
   color: black;
-  font-size: 1.1rem;
+  font-size: 0.7rem;
   letter-spacing: 3px;
   font-weight: bold;
 }
@@ -460,7 +464,7 @@ footer p {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .mainSection.blur {
@@ -472,7 +476,7 @@ footer p {
   flex-direction: column;
   max-width: 1200px;
   position: absolute;
-  width: 90%;
+  width: 95%;
   height: 90%;
   top: 50%;
   left: 50%;
@@ -482,14 +486,13 @@ footer p {
 }
 
 .modal .top {
-  flex-basis: 15%;
-  min-height: 7vh;
+  flex-basis: 10%;
   background-color: #e7d9b7;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
-  letter-spacing: 5px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
 }
 
 .modal .middle {
@@ -497,25 +500,26 @@ footer p {
   min-height: 65vh;
   background-color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
 .modal .bottom {
-  flex-basis: 15%;
-  min-height: 7vh;
+  flex-basis: 10%;
   background-color: #e7d9b7;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.8rem;
+  letter-spacing: 5px;
 }
 
 .hide {
   position: absolute;
-  top: 4%;
+  top: 3%;
   right: 3%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -524,49 +528,58 @@ i.fa.fa-times {
 }
 
 .imgChosenProduct {
-  height: 10vh;
-  width: 30vh;
+  height: 50%;
+  width: 40%;
 }
 
 .leftPanel {
-  height: 100%;
+  height: 50%;
   display: flex;
-  flex-basis: 30%;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
 
 .leftPanel img {
-  flex-basis: 70%;
+  flex-basis: 60%;
+  width: 35%;
+}
+
+.inputs {
+  flex-basis: 20%;
+  width: 70%;
 }
 
 .leftPanel input {
   flex-basis: 10%;
   width: 100%;
-  padding: 4px;
+  padding: 2%;
   border: 1px solid black;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   margin-bottom: 3px;
 }
 
 .rightPanel {
   display: flex;
-  flex-basis: 50%;
-  height: 100%;
+  height: 55%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .rightPanel h3 {
+  width: 100%;
   flex-basis: 10%;
   align-self: center;
+  font-size: 1rem;
+  margin: 5%;
+  line-height: 3rem;
+  text-align: center;
 }
 
 .rightPanel table {
+  width: 80vw;
   flex-grow: 1;
-  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -580,7 +593,7 @@ i.fa.fa-times {
   width: 100%;
 }
 
-.rightPanel table>tr,
+.rightPanel table > tr,
 th,
 td,
 button {
@@ -591,7 +604,7 @@ button {
   align-items: center;
   border: 1px solid black;
   border-collapse: collapse;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .modal-wrap button {
@@ -599,97 +612,109 @@ button {
   color: #412717;
   background-color: #e7d9b7;
   text-transform: uppercase;
-  font-size: 1.2rem;
-  letter-spacing: 5px;
+  font-size: 0.8rem;
   padding: 1px;
   display: block;
   transition: 0.3s;
   width: 100%;
   height: 100%;
-
 }
 
 .tdButtons {
   display: flex;
   flex-direction: column;
-  height: 10vh;
   border: none;
 }
 
 .tdButtons button {
   border: 1px solid #412717;
   flex-basis: 50%;
-  font-size: 0.8rem;
+  width: 100%;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
 }
-
 
 .imgProductsContainer button:hover {
   border: 2px solid #e7d9b7;
   background-color: transparent;
 }
 
-
-
-@media(max-width:800px) {
-  .welcome {
-    flex-basis: 40vh;
-    margin-top: 20vh;
-  }
-
-  .titleWelcome {
-    font-size: 0.8rem;
-    letter-spacing: 6px;
-    line-height: 5vh;
-  }
-
-  #logo {
-    height: 60%;
-    width: 60%;
-    min-height: 80px;
-  }
-
-  #logo img {
-    height: 100%;
-    width: 90%;
-  }
-
-  .burger {
-    font-size: 1.6rem;
-    top: 8%;
-    right: 7%;
-    cursor: pointer;
-    transition: 0.3s linear;
-    z-index: 3;
+@media (min-width: 768px) {
+  header {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .menu {
-    flex-basis: 100vw;
-    width: 100%;
-    flex-direction: column;
-    transition: 0.4s;
+    height: 20vh;
   }
 
   .menu.off {
     top: -20vh;
   }
 
+  .welcome {
+    flex-basis: 60vh;
+    margin-top: 20vh;
+  }
+
+  .titleWelcome {
+    font-size: 1rem;
+    letter-spacing: 10px;
+    line-height: 5vh;
+  }
+
+  nav ul li {
+    line-height: 5vh;
+    font-size: 5vh;
+  }
+
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+
+  #logo {
+    height: 70%;
+    width: 30%;
+    min-height: 80px;
+  }
+
+  #logo img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .burger {
+    font-size: 2rem;
+    top: 6%;
+    right: 5%;
+  }
+
+  .products {
+    width: 80%;
+    height: 90%;
+    max-width: 1200px;
+  }
 
   .titleSection {
     margin: 6% 0;
     letter-spacing: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1rem;
   }
 
   .products div.title {
     letter-spacing: 7px;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     margin: 5% 0;
   }
 
   .imagesContainer div.img {
     flex-shrink: 1;
-    flex-basis: 48%;
+    flex-basis: 37%;
   }
 
   .imagesCoffe {
@@ -719,70 +744,84 @@ button {
     line-height: 0.8rem;
     margin: 2% 0;
   }
-
-  .titleCont {
-    font-size: 0.9rem;
-    letter-spacing: 6px;
-    margin: 5% 0;
-    line-height: 3rem;
+  .imgProductsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .photosContainer {
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
-    flex-basis: 100%;
-    flex-grow: 1;
+    flex-grow: 0;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
   }
-
   .mainDiv {
-    width: 70%;
-    height: 65vh;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 6% 0;
-  }
-
-  .productImgDiv {
-    width: 80%;
+    flex-basis: 45%;
+    margin: 0;
+    min-height: 40vh;
+    justify-content: space-between;
+    margin: 5% 0;
   }
 
   .imgProductsContainer p,
   button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .imgProductsContainer p {
-    flex-basis: 12%;
-    font-size: 0.7rem;
-    line-height: 1.2rem;
-    padding: 2px;
-    letter-spacing: 5px;
+    flex-basis: 10%;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    line-height: 2rem;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   .imgProductsContainer button {
-    margin-top: 7%;
-    flex-basis: 12%;
-    font-size: 0.7rem;
-    line-height: 1.2rem;
-    letter-spacing: 4px;
-    padding: 2px;
+    font-size: 1rem;
+    margin-top: 10%;
+    border: none;
     transition: 0.3s;
+    width: 100%;
+  }
+
+  .productImgDiv {
+    width: 70%;
   }
 
   .contactContainer {
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
     margin-top: 5vh;
-    width: 90%;
-    height: 50vh;
+    width: 90vw;
+    min-height: 70vw;
+    max-width: 800px;
+    background-image: url("./images/coffee_background_1280.jpg");
+  }
+
+  .wholeForm {
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .mainInForm {
+    height: 20%;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 2% 0;
+  }
+
+  .formArticle {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .form {
@@ -795,7 +834,7 @@ button {
   }
 
   .message {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     margin-bottom: 3%;
     flex-basis: 10%;
     text-align: center;
@@ -806,16 +845,7 @@ button {
     flex-basis: 90%;
   }
 
-  .mainInForm {
-    width: 90%;
-    flex-basis: 10%;
-    text-align: center;
-    font-size: 1rem;
-    margin-bottom: 2%;
-  }
-
-
-  .form>* {
+  .form > * {
     width: 100%;
     padding: 2%;
     font-size: 0.5rem;
@@ -848,10 +878,7 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 3px 3px gray;
-    background-color: gray;
   }
-
 
   footer p {
     color: black;
@@ -866,41 +893,34 @@ button {
   }
 
   .modal-wrap {
-    width: 80%;
+    width: 100%;
     height: 100%;
   }
 
   .modal .top {
-    flex-basis: 5%;
+    flex-basis: 10%;
     font-size: 0.9rem;
-    letter-spacing: 2px;
+    letter-spacing: 7px;
   }
-
   .modal .middle {
-    flex-grow: 1;
-    flex-basis: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: row;
   }
 
   .modal .bottom {
-    flex-basis: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-basis: 10%;
+    font-size: 1rem;
+    letter-spacing: 7px;
   }
 
   .hide {
-    top: 2.8%;
-    right: 5%;
-    font-size: 1.2rem;
+    top: 2%;
+    right: 3%;
+    font-size: 1.4rem;
   }
 
   .imgChosenProduct {
-    height: 10vh;
-    width: 20vh;
+    height: 100%;
+    width: 100%;
   }
 
   .leftPanel {
@@ -908,30 +928,21 @@ button {
   }
 
   .leftPanel img {
-    flex-basis: 70%;
-  }
-
-  .leftPanel input {
-    flex-basis: 10%;
-    width: 100%;
-    padding: 2px;
-    font-size: 0.8rem;
-    margin-bottom: 5px;
-  }
-
-  .rightPanel h3 {
-    flex-basis: 20%;
-    align-self: center;
-    font-size: 1rem;
-    line-height: 1rem;
-    display: flex;
-    align-items: center;
+    width: 40%;
+    height: 90%;
   }
 
   .rightPanel {
-    width: 90%;
-    flex-basis: 60%;
-    justify-content: center;
+    display: flex;
+    flex-basis: 50%;
+    height: 90%;
+  }
+
+  .rightPanel h3 {
+    flex-basis: 5%;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
   }
 
   .rightPanel table {
@@ -954,115 +965,78 @@ button {
     font-size: 0.8rem;
   }
 
-  .rightPanel table>tr,
+  .rightPanel table > tr,
   td,
   button {
     width: 25%;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 
   .modal-wrap button {
     letter-spacing: 2px;
-    padding: 1px;
-  }
-
-  .tdButtons {
-    display: flex;
-    flex-direction: column;
-    height: 10vh;
-    border: none;
-  }
-
-  .tdButtons button {
-    flex-basis: 50%;
+    padding: 0;
     font-size: 0.6rem;
   }
-
 }
 
-@media(max-width:1025px) {
-  .welcome {
-    flex-basis: 50vh;
-    margin-top: 10vh;
-  }
-
+@media (min-width: 1024px) {
   .titleWelcome {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     letter-spacing: 7px;
     line-height: 5vh;
   }
-
-  header,
-  .menu,
-  .menu.off {
-    height: 10vh;
-  }
-
   #logo {
-    height: 60%;
     width: 25%;
-    min-height: 80px;
-  }
-
-  #logo img {
-    height: 100%;
-    width: 90%;
   }
 
   .burger {
-    font-size: 1.7rem;
-    top: 4%;
-    right: 4%;
+    font-size: 1.8rem;
+    top: 7%;
+    right: 3%;
   }
 
   .menu {
-    flex-basis: 100vw;
-    width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     transition: 0.4s;
   }
 
   nav ul li a {
     font-size: 1rem;
+    line-height: 5vh;
   }
 
   nav ul li {
-    line-height: 2.5vh;
-    font-size: 2.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-
-  .titleSection {
-    margin: 6% 0;
-    letter-spacing: 5px;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+  .products {
+    justify-content: space-between;
+    width: 100%;
   }
-
 
   .products div.title {
     letter-spacing: 7px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 5% 0;
   }
 
   .imagesContainer div.img {
     flex-shrink: 1;
-    flex-basis: 46%;
+    flex-basis: 22%;
   }
 
   .imagesCoffe {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
 
   .imgCoffeShop {
+    flex-basis: 48%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
   }
 
   .imgCoffeShop img {
@@ -1086,61 +1060,58 @@ button {
   }
 
   .photosContainer {
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
-    flex-basis: 100%;
-    flex-grow: 1;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
   }
 
   .mainDiv {
-    width: 70%;
-    height: 65vh;
+    flex-basis: 30%;
+    height: 75vh;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 6% 0;
   }
 
   .productImgDiv {
-    width: 80%;
+    width: 70%;
   }
 
   .imgProductsContainer p,
-  button {
+  .imgProductsContainer button {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .imgProductsContainer p {
-    flex-basis: 12%;
+    flex-basis: 15%;
     font-size: 0.7rem;
-    line-height: 1.2rem;
-    padding: 2px;
+    line-height: 1.5rem;
+    padding: 4px 0;
     letter-spacing: 5px;
   }
 
   .imgProductsContainer button {
     margin-top: 7%;
-    flex-basis: 12%;
-    font-size: 0.7rem;
-    line-height: 1.2rem;
-    letter-spacing: 4px;
-    padding: 2px;
     transition: 0.3s;
   }
 
   .contactContainer {
-    margin-bottom: 15vh;
-    margin-top: 5vh;
-    width: 90%;
-    height: 50vh;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    width: 80%;
+    height: 40vh;
+  }
+  .wholeForm {
+    width: 100%;
+    height: 50%;
+  }
+  .formArticle {
+    width: 60%;
   }
 
   .form {
@@ -1153,262 +1124,61 @@ button {
   }
 
   .message {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     margin-bottom: 3%;
     flex-basis: 10%;
     text-align: center;
     width: 90%;
   }
 
-  .contactContainer article {
-    flex-basis: 90%;
-  }
-
   .mainInForm {
     width: 90%;
     flex-basis: 10%;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 2%;
-  }
-
-
-  .form>* {
-    width: 100%;
-    padding: 2%;
-    font-size: 0.5rem;
-    border-width: 1px;
-    border-collapse: collapse;
-    margin-bottom: 2%;
-    border-color: #333332;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: left;
-    background-color: #eee;
   }
 
   .form textarea {
     flex-basis: 40%;
+    font-size: 0.6rem;
   }
 
   .form input,
   button {
     flex-basis: 20%;
   }
-
-  footer {
-    width: 100%;
-    height: 10vh;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 3px 3px gray;
-    background-color: gray;
+  .inputs {
+    font-size: 0.8rem;
   }
-
 
   footer p {
     color: black;
-    font-size: 1.1rem;
-    letter-spacing: 3px;
-    font-weight: bold;
-  }
-
-  .modal {
-    width: 80%;
-    height: 80%;
-  }
-
-  .modal-wrap {
-    width: 80%;
-    height: 100%;
-  }
-
-  .modal .top {
-    flex-basis: 5%;
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-  }
-
-  .modal .middle {
-    flex-grow: 1;
-    flex-basis: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .modal .bottom {
-    flex-basis: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hide {
-    top: 2.8%;
-    right: 5%;
-    font-size: 1.2rem;
-  }
-
-  .imgChosenProduct {
-    height: 10vh;
-    width: 20vh;
-  }
-
-  .leftPanel {
-    flex-basis: 40%;
-  }
-
-  .leftPanel img {
-    flex-basis: 70%;
-  }
-
-  .leftPanel input {
-    flex-basis: 10%;
-    width: 100%;
-    padding: 2px;
-    font-size: 0.8rem;
-    margin-bottom: 5px;
-  }
-
-  .rightPanel h3 {
-    flex-basis: 20%;
-    align-self: center;
     font-size: 1rem;
-    line-height: 1rem;
-    display: flex;
-    align-items: center;
+    letter-spacing: 3px;
   }
-
-  .rightPanel {
-    width: 90%;
-    flex-basis: 60%;
-    justify-content: center;
-  }
-
-  .rightPanel table {
-    flex-basis: 75%;
-    width: 90%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .rightPanel table tr {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-
-  .rightPanel table th {
-    font-size: 0.8rem;
-  }
-
-  .rightPanel table>tr,
-  td,
-  button {
-    width: 25%;
-    font-size: 0.5rem;
-  }
-
-  .modal-wrap button {
-    letter-spacing: 2px;
-    padding: 1px;
-  }
-
-  .tdButtons {
-    display: flex;
-    flex-direction: column;
-    height: 10vh;
-    border: none;
-  }
-
-  .tdButtons button {
-    flex-basis: 50%;
-    font-size: 0.6rem;
-  }
-
 }
 
-/* @media(max-width: 800px) {
-
-} */
-
-
-/* 
-
-@media(max-width: 1400px) {
-
+@media (min-width: 1300px) {
   #logo {
-    height: 100%;
-    width: 22%;
+    width: 17%;
+  }
+  .welcome {
+    flex-basis: 80vh;
+  }
+  .mainDiv {
+    flex-basis: 28%;
   }
 
-  #logo img {
-    height: 100%;
-  }
-
-
-  .burger {
-    font-size: 32px;
-    top: 6%;
-    right: 5%;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    top: 0;
-    right: 0;
-  }
-
-
-  nav ul li {
-    width: 20%;
-    height: 15vh;
-    line-height: 15vh;
-  }
-
-  nav ul li a {
-    font-size: 1.0rem;
-  }
-
-  .titleWelcome {
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 3.5rem;
-  }
-
-  .coffeHouses {
-    justify-content: space-between;
-  }
-
-  .imagesCoffe {
-    justify-content: space-around;
-  }
-
-  .imgCoffeShop {
-    width: 45%;
-    align-items: space-around;
-  }
-
-  .imgCoffeShop img {
+  .contactContainer {
+    margin-bottom: 12vh;
+    margin-top: 10vh;
     width: 100%;
-    height: 85%;
+    height: 40vh;
+    min-height: 30vw;
   }
-
-  .imgCoffeShop div.title {
-    font-size: 0.9rem;
-    margin: 1.5% 0;
+  .leftPanel img {
+    flex-basis: 50%;
+    width: 30%;
   }
-
-} */
+}

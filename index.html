@@ -20,7 +20,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="JSON.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <main class="mainSection">
@@ -49,22 +49,22 @@
       <section class="products" id="products">
         <div class="titleSection">Nasze produkty</div>
         <article class="imagesContainer">
-        <div class="img" title="Pokaż produkty">
-          <img id="sliderPhoto1" value="Arabica" src="./images/arabica.jpg" />
-          <div class="title">Arabica</div>
-        </div>
-        <div class="img" title="Pokaż produkty">
-          <img id="sliderPhoto2" value="Robusta"src="./images/robusta.jpg" />
-          <div class="title">Robusta</div>
-        </div>
-        <div class="img" title="Pokaż produkty">
-          <img id="sliderPhoto3" value="Liberica"src="./images/libericaImg.jpg" />
-          <div class="title">Liberica</div>
-        </div>
-        <div class="img" title="Pokaż produkty">
-          <img id="sliderPhoto4" value="Artykuły"src="./images/artykuly.jpg" />
-          <div class="title">Atrykuły</div>
-        </div>
+          <div class="img" title="Pokaż produkty">
+            <img id="sliderPhoto1" value="Arabica" src="./images/arabica.jpg" />
+            <div class="title">Arabica</div>
+          </div>
+          <div class="img" title="Pokaż produkty">
+            <img id="sliderPhoto2" value="Robusta"src="./images/robusta.jpg" />
+            <div class="title">Robusta</div>
+          </div>
+          <div class="img" title="Pokaż produkty">
+            <img id="sliderPhoto3" value="Liberica"src="./images/libericaImg.jpg" />
+            <div class="title">Liberica</div>
+          </div>
+          <div class="img" title="Pokaż produkty">
+            <img id="sliderPhoto4" value="Artykuły"src="./images/artykuly.jpg" />
+            <div class="title">Atrykuły</div>
+          </div>
         </article>
       </section>
       <section class="section">
@@ -84,9 +84,9 @@
         </article>
       </section>
       <section class="contactContainer" id="contact">
-        <div class="wholeForrm">
+        <div class="wholeForm">
         <div class="mainInForm">Napisz do nas</div>
-        <article>
+        <article class="formArticle">
         <div class="message">
           <div>Jeśli masz pytania, skorzystaj z formularza</div>
           <div>lub zadzwoń: (+48)765765765</div>
@@ -107,6 +107,7 @@
         <div class="middle">
             <div class="leftPanel">
               <img class="imgChosenProduct" src=""></img>
+              <div class="inputs">
                 <input
                 id="name"
                 type="text"
@@ -119,6 +120,8 @@
                 placeholder="Podaj ilość sztuk"
                 required
                 />
+              </div>
+           
             </div>
           <section class="rightPanel">
             <h3>Przedmioty w koszyku:</h3>

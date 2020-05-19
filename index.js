@@ -63,24 +63,7 @@ function bindDom() {
   imgChosenProduct = document.querySelector(".imgChosenProduct");
 }
 
-// function handleSlider() {
-
-//   let activePhoto1 = sliderPhoto1;
-//   let activePhoto2 = sliderPhoto2;
-//   let activePhoto3 = sliderPhoto3;
-//   let activePhoto4 = sliderPhoto4;
-
-//   let activePhotos = [activePhoto1, activePhoto2, activePhoto3, activePhoto4];
-//   for (let i = 0; i < activePhotos.length; i++) {
-//     if (i == activePhotos.length) {
-//       i = 0;
-//     }
-//   }
-//   sliderPhoto1.src;
-// }
-
 function createTableWithProducts(tab) {
-  debugger;
   let photoClicked = event.target.getAttribute("value");
   let articleTitle = document.createElement("div");
   articleTitle.setAttribute("class", "titleCont");
