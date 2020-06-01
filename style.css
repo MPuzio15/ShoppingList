@@ -80,14 +80,14 @@ header {
 
 #logo {
   height: 70%;
-  width: 50%;
+  width: 45%;
   display: block;
   min-height: 80px;
 }
 
 #logo img {
   height: 100%;
-  width: 90%;
+  width: 80%;
 }
 
 .burger {
@@ -145,7 +145,7 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: whitesmoke;
   text-decoration: none;
   text-transform: uppercase;
@@ -154,7 +154,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: gray;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 main {
@@ -416,7 +417,7 @@ button {
   text-align: center;
 }
 
-.form > * {
+.form>* {
   width: 100%;
   padding: 3%;
   font-size: 0.6rem;
@@ -593,7 +594,7 @@ i.fa.fa-times {
   width: 100%;
 }
 
-.rightPanel table > tr,
+.rightPanel table>tr,
 th,
 td,
 button {
@@ -744,6 +745,7 @@ button {
     line-height: 0.8rem;
     margin: 2% 0;
   }
+
   .imgProductsContainer {
     display: flex;
     flex-direction: column;
@@ -761,6 +763,7 @@ button {
     align-items: center;
     justify-content: space-around;
   }
+
   .mainDiv {
     flex-basis: 45%;
     margin: 0;
@@ -845,7 +848,7 @@ button {
     flex-basis: 90%;
   }
 
-  .form > * {
+  .form>* {
     width: 100%;
     padding: 2%;
     font-size: 0.5rem;
@@ -902,6 +905,7 @@ button {
     font-size: 0.9rem;
     letter-spacing: 7px;
   }
+
   .modal .middle {
     flex-direction: row;
   }
@@ -965,7 +969,7 @@ button {
     font-size: 0.8rem;
   }
 
-  .rightPanel table > tr,
+  .rightPanel table>tr,
   td,
   button {
     width: 25%;
@@ -985,13 +989,14 @@ button {
     letter-spacing: 7px;
     line-height: 5vh;
   }
+
   #logo {
-    width: 25%;
+    width: 20%;
   }
 
   .burger {
     font-size: 1.8rem;
-    top: 7%;
+    top: 7.5%;
     right: 3%;
   }
 
@@ -1011,6 +1016,7 @@ button {
     align-items: center;
     justify-content: center;
   }
+
   .products {
     justify-content: space-between;
     width: 100%;
@@ -1106,10 +1112,12 @@ button {
     width: 80%;
     height: 40vh;
   }
+
   .wholeForm {
     width: 100%;
     height: 50%;
   }
+
   .formArticle {
     width: 60%;
   }
@@ -1148,6 +1156,7 @@ button {
   button {
     flex-basis: 20%;
   }
+
   .inputs {
     font-size: 0.8rem;
   }
@@ -1160,12 +1169,12 @@ button {
 }
 
 @media (min-width: 1300px) {
-  #logo {
-    width: 17%;
-  }
+
+
   .welcome {
     flex-basis: 80vh;
   }
+
   .mainDiv {
     flex-basis: 28%;
   }
@@ -1177,6 +1186,7 @@ button {
     height: 40vh;
     min-height: 30vw;
   }
+
   .leftPanel img {
     flex-basis: 50%;
     width: 30%;
