@@ -19,7 +19,7 @@ let imgChosenProduct;
 
 let arabicaTab = [
   { name: "Caturra", imgAddress: "./images/caturra.png" },
-  { name: "Pacamara", imgAddress: "./images/Pacamara.png" },
+  { name: "Pacamara", imgAddress: "./images/pacamara.png" },
   { name: "Typica", imgAddress: "./images/typica.png" },
   { name: "Bourbon", imgAddress: "./images/Bourbon.png" },
   { name: "Pacas", imgAddress: "./images/Pacas.png" },
